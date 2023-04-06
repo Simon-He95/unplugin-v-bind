@@ -1,0 +1,31 @@
+// Vitest Snapshot v1
+
+exports[`vbindTransform Test > 1.vue 1`] = `
+"<script setup lang=\\"ts\\">
+const color = ref('red')
+const move = ref(10)
+const add = () => move.value += 10
+</script>
+
+<template>
+  <div class=\\"color\\">
+    color
+  </div>
+  <div class=\\"move\\" @click=\\"add\\">
+    move
+  </div>
+</template>
+
+<style scoped>
+.color {
+  color: v-bind(color)
+}
+
+.move {
+  transform: translateX(calc(v-bind(move) * 1px));
+  width: calc(v-bind(move) * 10px);
+  height: calc(v-bind(move) * 10px)
+}
+</style>
+"
+`;
