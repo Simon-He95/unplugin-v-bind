@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/kv.png" />
+  <img src="./assets/kv1.png" />
 </p>
 
 <p align="center">
